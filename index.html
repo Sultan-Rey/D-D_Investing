@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>D&D Investing</title>
+           <!-- Bootstrap CSS CDN -->
+           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Ajouter Font Awesome -->
+           <!-- Our Custom CSS -->
+           <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html" onclick="toggleSection('home')">
+      <img src="votre_icone_url.png" alt="Logo"/> D&D <b>Investing</b>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+       
+            <li class="nav-item" onclick="toggleSection('about')" >
+              <a class="nav-link" href="#">Who we are</a>
+            </li>
+            <li class="nav-item"  onclick="toggleSection('contact')">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+      <form class="form-inline my-2 my-lg-0 ml-auto search-bar">
+        <div class="input-group border">
+          <input class="form-control mr-sm-2" type="search" placeholder="Apartment Search" aria-label="Search">
+          <div class="input-group-append">
+            <span class="input-group-text search-icon"><i class="fas fa-search"></i></span> <!-- Ajout de l'icône de recherche -->
+          </div>
+        </div>
+      </form>
+      
+      <button class="btn btn-outline-light my-2 my-sm-0 invest-btn" type="button">Invest with us</button>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="closeNav()">&times;</span>
+    <a><form class="form-inline my-2 my-lg-0 ml-auto search-bar">
+        <div class="input-group border">
+          <input class="form-control mr-sm-2" type="search" placeholder="Apartment Search" aria-label="Search">
+          <div class="input-group-append">
+            <span class="input-group-text search-icon"><i class="fas fa-search"></i></span> <!-- Ajout de l'icône de recherche -->
+          </div>
+        </div>
+      </form></a>
+    <a href="#" onclick="toggleSection('about')">Who we are</a>
+    <a href="#" onclick="toggleSection('contact')">Contact Us</a>
+  </div>
+
+  <!-- Section content -->
+  <section id="home" class="angled-border visible">
+    <div class="overlay">
+        <h1 class="text-center">D&D <b>Investing</b></h1>
+        <h2 class="text-center">Invest today for a greater tomorrow</h2>
+    </div>
+    
+  </section>
+  <section id="about">
+    <div class="row container">
+      <div class="col-lg-6">
+        <h3>D&amp;D Investing</h3>
+<p>A real estate company specializing in acquisition, development and management of residential
+investment properties.</p>
+<p>Our team of experienced professionals values culture, community, and respect of individuals
+from all backgrounds. We make it our duty to form relationships with our tenants and people
+within the community. Our goal is to show them we care by providing amazing residential rental
+experiences. We offer modern, spacious apartments which include great amenities but at
+affordable prices.</p>
+
+<h4>Apartment Search</h4>
+<p>We currently don’t have any open listing.
+Enter your info to be the first notified when something opens up in your zip code.
+</p>
+<h4>Invest with us</h4>
+<p>our values are aligned and you want to work with us, please fill out this form and we will reach
+out to you shortly.</p>
+      </div>
+      <div class="col-lg-6 img">
+<img src="images/home_bg.jpg" class="img-fluid" width="700" />
+      </div>
+    </div>
+    
+  </section>
+
+<section id="contact">
+  <div class="container col-lg-5 p-4">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" name="firstName" required>
+        </div>
+        <div class="col">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" name="lastName" required>
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="email" class="form-label">Email (required)</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone (required)</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="investmentAmount" class="form-label">How much you're interested in investing?</label>
+        <textarea class="form-control" id="investmentAmount" name="investmentAmount"></textarea>
+      </div>
+  
+      <div class="mb-3">
+        <label for="howHeard" class="form-label">How did you hear about us?</label>
+        <input type="text" class="form-control" id="howHeard" name="howHeard">
+      </div>
+  
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+  </div>
+  
+</section>
+</section>
+
+
+  <footer>
+    <div>
+        <div class="info">
+            <a href="#">+1 973 200-1599</a>
+            <a href="#">support@ddinvestings.com</a>
+        </div>
+      
+        <div class="media-icon">
+           <a href="#"><i class="fab fa-facebook fa-3x"></i></a> 
+            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+           <a href="#"><i class="fab fa-twitter fa-3x"></i></a> 
+        </div>
+      
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script> <!-- Ajouter le script Font Awesome -->
+<script src="js/script.js"></script>
+    </body>
+</html>
