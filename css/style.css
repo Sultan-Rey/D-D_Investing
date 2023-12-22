@@ -10,6 +10,7 @@ section {
   transition: opacity 1.5s ease-in-out;
 }
 
+
 /* Ajout de la classe "visible" pour afficher la section avec une transition d'opacité */
 section.visible {
   display: block;
@@ -62,7 +63,7 @@ section.visible {
     background-color: #0f0f0f;
     position: fixed;
     height: 100%;
-    width: 0;
+    width: 10px;
     top: 0;
     left: 0;
     overflow-x: hidden;

@@ -21,28 +21,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        
-      
-      
       <button class="btn btn-outline-light ml-auto my-2 my-sm-0 invest-btn mr-2" type="button" onclick="toggleSection('about')">Apartment Search <i class="fas fa-search"></i> </button>
       <button class="btn btn-outline-light my-2 my-sm-0 invest-btn" type="button" onclick="toggleSection('contact')">Invest with us</button>
     </div>
   </nav>
 
-  <!-- Sidebar -->
-<div class="sidebar" id="sidebar">
-    <span class="close-btn" onclick="closeNav()">&times;</span>
-    <a><form class="form-inline my-2 my-lg-0 ml-auto search-bar">
-        <div class="input-group border">
-          <input class="form-control mr-sm-2" type="search" placeholder="Apartment Search" aria-label="Search">
-          <div class="input-group-append">
-            <span class="input-group-text search-icon"><i class="fas fa-search"></i></span> <!-- Ajout de l'icône de recherche -->
-          </div>
-        </div>
-      </form></a>
-    <a href="#" onclick="toggleSection('about')">Who we are</a>
-    <a href="#" onclick="toggleSection('contact')">Contact Us</a>
-  </div>
+  
+
+
 
   <!-- Section content -->
   <section id="home" class="angled-border visible">
@@ -119,7 +105,15 @@ out to you shortly.</p>
   </div>
   
 </section>
-</section>
+
+<!-- Sidebar -->
+  
+<div class="sidebar" id="sidebar">
+  <span class="close-btn" onclick="closeNav()">&times;</span>
+ 
+  <a href="#" onclick="toggleSection('about')">Apartment Search</a>
+  <a href="#" onclick="toggleSection('contact')">Invest with Us</a>
+</div>
 
 
   <footer>
