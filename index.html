@@ -21,25 +21,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-       
-            <li class="nav-item" onclick="toggleSection('about')" >
-              <a class="nav-link" href="#">Who we are</a>
-            </li>
-            <li class="nav-item"  onclick="toggleSection('contact')">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-      <form class="form-inline my-2 my-lg-0 ml-auto search-bar">
-        <div class="input-group border">
-          <input class="form-control mr-sm-2" type="search" placeholder="Apartment Search" aria-label="Search">
-          <div class="input-group-append">
-            <span class="input-group-text search-icon"><i class="fas fa-search"></i></span> <!-- Ajout de l'icône de recherche -->
-          </div>
-        </div>
-      </form>
+        
       
-      <button class="btn btn-outline-light my-2 my-sm-0 invest-btn" type="button">Invest with us</button>
+      
+      <button class="btn btn-outline-light ml-auto my-2 my-sm-0 invest-btn mr-2" type="button" onclick="toggleSection('about')">Apartment Search <i class="fas fa-search"></i> </button>
+      <button class="btn btn-outline-light my-2 my-sm-0 invest-btn" type="button" onclick="toggleSection('contact')">Invest with us</button>
     </div>
   </nav>
 
@@ -95,7 +81,7 @@ out to you shortly.</p>
 
 <section id="contact">
   <div class="container col-lg-5 p-4">
-    <h2 class="text-center mb-4">Contact Us</h2>
+    <h2 class="text-center mb-4">Invest with Us</h2>
     <form>
       <div class="row mb-3">
         <div class="col">
@@ -128,7 +114,7 @@ out to you shortly.</p>
         <input type="text" class="form-control" id="howHeard" name="howHeard">
       </div>
   
-      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      <button type="submit" class="btn btn-lg" style="background: #797255 ;">Submit</button>
     </form>
   </div>
   
@@ -138,16 +124,17 @@ out to you shortly.</p>
 
   <footer>
     <div>
+      <div class="media-icon">
+        <a href="https://m.facebook.com/p/DD-Investings-LLC-61553254662715/"><i class="fab fa-facebook fa-3x"></i></a> 
+         <a href="https://www.instagram.com/ddinvestings/"><i class="fab fa-instagram fa-3x"></i></a>
+        <a href="https://twitter.com/ddinvestings/"><i class="fab fa-twitter fa-3x"></i></a> 
+     </div>
         <div class="info">
             <a href="#">+1 973 200-1599</a>
-            <a href="#">support@ddinvestings.com</a>
+            <a href="support@ddinvestings.com">support@ddinvestings.com</a>
         </div>
       
-        <div class="media-icon">
-           <a href="#"><i class="fab fa-facebook fa-3x"></i></a> 
-            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
-           <a href="#"><i class="fab fa-twitter fa-3x"></i></a> 
-        </div>
+        
       
     </div>
   </footer>

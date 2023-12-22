@@ -19,7 +19,7 @@ section.visible {
 .navbar {
     background-color: #26221A;
     box-shadow: 0 2px 4px rgba(26, 25, 25, 0.808); /* fade box shadow underneath */
-    height: 70px; /* Navbar height */
+    height: 80px; /* Navbar height */
   }
   .navbar .navbar-brand {
     color: #ffffff;
@@ -39,23 +39,10 @@ section.visible {
     color:rgb(94, 38, 1)
   }
   
-  .search-bar {
-    margin-right: 10px;
-    
-  }
-  .search-bar input[type="search"]{
-    color: #ffffff;
-    background-color: #262219;
-    border: none;
-  }
-  
-  .search-icon {
-    background-color: transparent; /* Transparent background color */
-    border: none;
-  }
   .invest-btn {
     border: 1px solid #ffffff;
     border-radius: 0;
+    padding: 10px;
     color: #ffffff;
   }
 
@@ -132,7 +119,7 @@ section.visible {
   }
  
   #about{
-      background: linear-gradient(to right, #ffffff 65%, #797255 35%);
+      background: linear-gradient(to right, #ffffff 70%, #797255 30%);
       color: #0f0f0f;
       padding: 5%;
       height: 90vh; 
@@ -153,6 +140,10 @@ section.visible {
   #contact{
     padding: 50px;
     transition: ease-in-out 1.5s;
+    background: white;
+  }
+  #contact input,#investmentAmount{
+    background:#eee;
   }
 
   /*
