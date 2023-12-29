@@ -127,6 +127,24 @@ section.visible {
       
       transition: ease-in-out 1.5s;
   }
+  #about::before{
+    content: '';
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #ffffff;
+  }
+  #about::after{
+    content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #ffffff;
+  }
   #about .container{
     margin-left: auto;
     margin-right: auto;
@@ -138,6 +156,7 @@ section.visible {
     justify-content: center;
     flex-direction: column;
   }
+  
   #contact{
     padding: 50px;
     transition: ease-in-out 1.5s;
